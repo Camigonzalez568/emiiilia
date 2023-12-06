@@ -7,7 +7,7 @@ export default function Cards() {
 
   return (
     <div> 
-      <h1 className="titulo">Once titular de la final de la Libertadores de 2018</h1>
+      <h1 className="titulo">Album de emilia mamii</h1>
       <div className="card-container">
         {cardsData.map((card, index) => (
           <Card
