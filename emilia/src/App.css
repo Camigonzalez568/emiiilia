@@ -1,0 +1,19 @@
+/* App.css */
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* dos columnas de igual ancho */
+	gap: 2%; /* espacio entre las tarjetas */
+	justify-content: center; /* centrar las tarjetas horizontalmente */
+  margin-left: 10%;
+}
+.card img {
+	width: 70%;
+	height: 60%;
+}
+#boton1{
+  background-color: gray;
+}
+#boton2{
+  background-color: gray;
+}
