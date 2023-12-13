@@ -1,16 +1,20 @@
-import './App.css'
-import Home from './componentes/Home'
-import MyProvider  from "./context/Provider"
+import MyCard from "./componentes/MyCard";
+import Provider  from "./context/Provider";
 
-const App = () => {
-  return (
-    < >
-      <MyProvider>
-         
-          <Home/>
-      </MyProvider>
-    </>
-  )
+import "./App.css";
+// cambiar a useState 
+function App() {
+
+    return (
+        
+        <div>
+            <Provider> 
+                <Navbar />
+                <h1>Album de emilia mami</h1>
+                <MyCard />
+           </Provider>
+      </div>
+  );
 }
 
-export default A
+export default A;

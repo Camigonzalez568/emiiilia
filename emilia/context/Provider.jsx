@@ -69,22 +69,11 @@ export const MyContext = createContext();
 
   ]);
 
-  const handleDeleteCard = (id) => {
-    // Filtrar las tarjetas para eliminar la que coincida con el ID
-    const updatedCards = cards.filter((card) => card.id !== id);
-    setCards(updatedCards);
-};
+  const [busqueda, setBusqueda] = useState("");
 
-return (
-<div>
-    <Contexto.Provider >
-        {children}
-    </Contexto.Provider>
-
-
-
-</div>
-)
+  return (<>
+      <Contexto.Provider value={{ jugadores, setJugadores, busqueda, setBusqueda }}>
+          {children}
+      </Contexto.Provider>
+      </>)
 }
-
-export default  ContextProvider
